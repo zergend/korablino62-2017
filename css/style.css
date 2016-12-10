@@ -30,7 +30,7 @@ footer {
   background-color: #fff;
 }
 
-header, footer {
+header, footer, main,  .main-header {
   width: 100%;
 }
 
