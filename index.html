@@ -10,58 +10,57 @@
 </head>
 
 <body>
-  <header>
-    <div class="main-header container clearfix">
-      <div class="logo">
+  <header class="page-header">
+    <div class="header-inner  main-header  container  clearfix">
+      <div class="header-inner__logo">
         <a href="/">
           <img src="img/logo.png" width="92" height="112" alt="Герб">
         </a>
       </div>
-      <div class="header-container">
-        <div class="header-top-line clearfix">
-          <nav class="top-menu-left">
-            <ul>
-              <li class="top-menu-item">
-                <a href="#">Новости</a>
-              </li>
-              <li class="top-menu-item">
-                <a href="#">Анонсы, объявления</a>
-              </li>
-              <li class="top-menu-item">
-                <a href="#">Открытые данные</a>
-              </li>
-
-            </ul>
-          </nav>
-          <div class="search-form">
+      <div class="header-inner__content  header-container">
+        <nav class="main-nav  header-top-line  clearfix">
+          <!-- <nav class="header-inner__menu top-menu-left"> -->
+          <ul class="main-nav__items">
+            <li class="main-nav__item  top-menu-item">
+              <a href="#" class="main-nav__link">Новости</a>
+            </li>
+            <li class="main-nav__item  top-menu-item">
+              <a href="#" class="main-nav__link">Анонсы, объявления</a>
+            </li>
+            <li class="main-nav__item  top-menu-item">
+              <a href="#" class="main-nav__link">Открытые данные</a>
+            </li>
+          </ul>
+          <!-- </nav> -->
+          <div class="main-nav__search  search-form">
             <input type="text" placeholder="введите ключевое слово" />
           </div>
-        </div>
-        <div class="header-top-line clearfix">
-          <div class="header-site-name">
-            <div class="header-site-title">
-              Администрация муниципального образования —
-              <br>Кораблинский муниципальный район Рязанской области
+        </nav>
+        <div class="header-title  clearfix">
+          <div class="header-title__site  header-site-name">
+            <div class="header-title__name  header-site-title">
+              <h1><a href="/" class="header-title__link">Администрация муниципального образования —
+              <br>Кораблинский муниципальный район Рязанской области</a></h1>
             </div>
-            <div class="header-site-subtitle">
+            <div class="header-title__subname  header-site-subtitle">
               Официальный сайт
             </div>
           </div>
-          <div class="for-the-visually-impaired">
+          <div class="header-title__ftvi  for-the-visually-impaired">
             глаз
           </div>
         </div>
       </div>
-      <nav class="top-menu-right">
-        <ul>
-          <li class="top-menu-item">
-            <a href="#">Нормативная база</a>
+      <div class="sub-nav">
+        <ul class="sub-nav__items  top-menu-right">
+          <li class="sub-nav__item">
+            <a href="#" class="sub-nav__link">Нормативная база</a>
           </li>
-          <li class="top-menu-item">
-            <a href="#">Контакты</a>
+          <li class="sub-nav__item">
+            <a href="#" class="sub-nav__link">Контакты</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
   <div class="index-marque">
@@ -69,53 +68,61 @@
       ПРИРОДОПОЛЬЗОВАТЕЛЯМ О ПРЕДОСТАВЛЕНИИ ОТЧЕТОВ ПО ФОРМЕ № 2-ТП (ОТХОДЫ) ... НОВЫЙ ПОРЯДОК ПРИМЕНЕНИЯ КОНТРОЛЬНО – КАССОВОЙ ТЕХНИКИ ... ПОЗДРАВЛЕНИЕ ГЛАВЫ РАЙОНА С ДНЁМ МАТЕРИ ...
     </marquee>
   </div>
-  <main class="main-content container clearfix">
+  <main class="main-content  container  clearfix">
 
-    <div class="left-column">
-      <nav class="left-menu">
-        <ul>
-          <li class="left-menu-item">
-            <a href="#">Администрация</a>
+    <div class="column  column--left  left-column">
+      <nav class="column-nav  left-menu">
+        <ul class="column-nav__items">
+          <li class="column-nav__item  column-nav__item--active  left-menu-item">
+            <a href="#" class="column-nav__link">Администрация</a>
           </li>
-          <li class="left-menu-item">
-            <a href="#">Новости</a>
+          <li class="column-nav__item  left-menu-item">
+            <a href="#" class="column-nav__link">Новости</a>
           </li>
-          <li class="left-menu-item">
-            <a href="#">Дума</a>
+          <li class="column-nav__item  left-menu-item">
+            <a href="#" class="column-nav__link">Дума</a>
           </li>
-          <li class="left-menu-item">
-            <a href="#">Поселения</a>
+          <li class="column-nav__item  left-menu-item">
+            <a href="#" class="column-nav__link">Поселения</a>
           </li>
-          <li class="left-menu-item">
-            <a href="#">Пожарная безопасность</a>
+          <li class="column-nav__item  left-menu-item">
+            <a href="#" class="column-nav__link">Пожарная безопасность</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="middle-column">
-      <section class="slider">
+    <div class="column  column--middle  middle-column">
+      <div class="slider">
 
-      </section>
-      <section class="new-posts">
-        <div class="anounce">
+      </div>
+      <div class="new-posts">
+        <div class="content-block">
+          <div class="content-block__anounce">
+
+          </div>
+          <div class="content-block__news">
+
+          </div>
+        </div>
+      </div>
+      <div class="content-block  content-block--alert">
+        <div class="content-block__sticky">
 
         </div>
-        <div class="news">
+      </div>
+      <div class="content-block">
+        <div class="content-block__video-posts">
 
         </div>
-      </section>
-      <section class="sticky">
+      </div>
+      <div class="content-block">
+        <div class="content-block__gallery">
 
-      </section>
-      <section class="video">
-
-      </section>
-      <section class="foto">
-
-      </section>
+        </div>
+      </div>
     </div>
 
-    <div class="right-column">
+    <div class="column  column--right  right-column">
 
     </div>
 
@@ -125,21 +132,8 @@
 
   </main>
 
-  <footer class="main-footer container clearfix">
-    <section class="footer-item footer-item-tag">
-      <a href="#">#visitsedona</a>
-    </section>
+  <footer class="main-footer  container  clearfix">
 
-    <section class="footer-item footer-item-social">
-      <a class="btn blue-btn social-btn" href="#">Twitter<span class="footer-icon-social icon-twitter"></span></a>
-      <a class="btn blue-btn social-btn" href="#">Facebook<span class="footer-icon-social icon-facebook"></span></a>
-      <a class="btn blue-btn social-btn" href="#">Youtube<span class="footer-icon-social icon-youtube"></span></a>
-    </section>
-
-    <section class="footer-item footer-item-copyright">
-      <span>Website by</span>
-      <a href="http://www.htmlacademy.ru"><span class="sprite-htmlacademy"></span></a>
-    </section>
   </footer>
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
