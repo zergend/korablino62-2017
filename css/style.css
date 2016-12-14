@@ -107,7 +107,7 @@ a {
   max-width: 1000px;
 }
 
-.main-nav__items {
+.main-nav__list {
   float: left;
   width: 55%;
   margin-left: -7px;
@@ -147,9 +147,9 @@ a {
 
 /* стилизация меню */
 
-.main-nav__items,
-.sub-nav__items,
-.column-nav__items {
+.main-nav__list,
+.sub-nav__list,
+.column-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -161,8 +161,8 @@ a {
   bottom: 0;
 }
 
-.main-nav__items,
-.sub-nav__items {
+.main-nav__list,
+.sub-nav__list {
   margin-right: 4px;
 }
 
@@ -172,7 +172,7 @@ a {
   margin-right: -4px;
 }
 
-.column-nav__items {
+.column-nav__list {
   margin-top: 10px;
 }
 
@@ -213,12 +213,12 @@ a {
   font-size: 16px;
 }
 
-.main-nav__items,
-.column-nav__items {
+.main-nav__list,
+.column-nav__list {
   text-align: left;
 }
 
-.sub-nav__items {
+.sub-nav__list {
   text-align: right;
 }
 
