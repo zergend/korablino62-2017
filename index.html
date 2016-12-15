@@ -18,23 +18,23 @@
         </a>
       </div>
       <div class="header-inner__content">
-        <nav class="main-nav  clearfix">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+        <nav class="menu-horizontal  clearfix">
+          <ul class="menu-horizontal__list">
+            <li class="menu-horizontal__item">
               <a href="#">Новости</a>
             </li>
-            <li class="main-nav__item">
+            <li class="menu-horizontal__item">
               <a href="#">Анонсы, объявления</a>
             </li>
-            <li class="main-nav__item">
+            <li class="menu-horizontal__item">
               <a href="#">Открытые данные</a>
             </li>
           </ul>
-
-          <div class="main-nav__search">
-            <input type="text" placeholder="введите ключевое слово" />
-          </div>
         </nav>
+        <div class="site-search">
+          <input type="text" placeholder="введите ключевое слово" />
+        </div>
+
         <div class="header-title  clearfix">
           <div class="header-title__site">
             <div class="header-title__name">
@@ -50,12 +50,12 @@
           </div>
         </div>
       </div>
-      <div class="sub-nav">
-        <ul class="sub-nav__list">
-          <li class="sub-nav__item">
+      <div class="menu-horizontal  menu-horizontal--buttom-right">
+        <ul class="menu-horizontal__list">
+          <li class="menu-horizontal__item">
             <a href="#">Нормативная база</a>
           </li>
-          <li class="sub-nav__item">
+          <li class="menu-horizontal__item">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -70,24 +70,32 @@
   <main class="main-content  container  clearfix">
 
     <div class="column  column--left">
-      <nav class="column-nav">
-        <ul class="column-nav__list">
-          <li class="column-nav__item  column-nav__item--active">
+      <nav class="menu-vertical">
+        <ul class="menu-vertical__list">
+          <li class="menu-vertical__item  current-menu-item">
             <a href="#">Администрация</a>
           </li>
-          <li class="column-nav__item">
+          <li class="menu-vertical__item  menu-item-has-children">
             <a href="#">Новости</a>
+            <ul class="menu-vertical__list  submenu">
+              <li class="menu-vertical__item">
+                <a href="#">Подменю 1</a>
+              </li>
+              <li class="menu-vertical__item">
+                <a href="#">Подменю 2</a>
+              </li>
+            </ul>
           </li>
-          <li class="column-nav__item">
+          <li class="menu-vertical__item">
             <a href="#">Дума</a>
           </li>
-          <li class="column-nav__item">
+          <li class="menu-vertical__item">
             <a href="#">Отдел муниципального заказа и потребительского рынка</a>
           </li>
-          <li class="column-nav__item">
+          <li class="menu-vertical__item">
             <a href="#">Пожарная безопасность</a>
           </li>
-          <li class="column-nav__item">
+          <li class="menu-vertical__item">
             <a href="#">Поселения</a>
           </li>
         </ul>

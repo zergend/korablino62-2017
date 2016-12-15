@@ -107,13 +107,13 @@ a {
   max-width: 1000px;
 }
 
-.main-nav__list {
+.menu-horizontal__list {
   float: left;
   width: 55%;
   margin-left: -7px;
 }
 
-.main-nav__search {
+.site-search {
   float: right;
   width: 44%;
   text-align: right;
@@ -147,44 +147,44 @@ a {
 
 /* стилизация меню */
 
-.main-nav__list,
-.sub-nav__list,
-.column-nav__list {
+.menu-horizontal__list,
+.menu-horizontal__list,
+.menu-vertical__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.sub-nav {
+.menu-horizontal--buttom-right {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.main-nav__list,
-.sub-nav__list {
+.menu-horizontal__list,
+.menu-horizontal__list {
   margin-right: 4px;
 }
 
-.main-nav__item,
-.sub-nav__item {
+.menu-horizontal__item,
+.menu-horizontal__item {
   display: inline-block;
   margin-right: -4px;
 }
 
-.column-nav__list {
+.menu-vertical__list {
   margin-top: 10px;
 }
 
-.main-nav__item a,
-.sub-nav__item a {
+.menu-horizontal__item a,
+.menu-horizontal__item a {
   display: block;
   margin-left: -1px;
   padding: 5px 7px;
   border-left: 1px solid #326480;
 }
 
-.column-nav__item a {
+.menu-vertical__item a {
   display: block;
   padding: 5px 10px;
   border-bottom: 1px solid #326480;
@@ -192,33 +192,33 @@ a {
   background-color: #f5f8f9;
 }
 
-.main-nav__item:first-child a,
-.sub-nav__item:first-child a {
+.menu-horizontal__item:first-child a,
+.menu-horizontal__item:first-child a {
   border-left: none;
 }
 
-.main-nav__item a:hover,
-.sub-nav__item a:hover {
+.menu-horizontal__item a:hover,
+.menu-horizontal__item a:hover {
   color: #fff;
   background-color: #326480;
 }
 
-.column-nav__item a:hover {
+.menu-vertical__item a:hover {
   background-color: rgba(50, 100, 128, 0.2);
 }
 
-.main-nav__item a,
-.sub-nav__item a,
-.column-nav__item a {
+.menu-horizontal__item a,
+.menu-horizontal__item a,
+.menu-vertical__item a {
   font-size: 16px;
 }
 
-.main-nav__list,
-.column-nav__list {
+.menu-horizontal__list,
+.menu-vertical__list {
   text-align: left;
 }
 
-.sub-nav__list {
+.menu-horizontal__list {
   text-align: right;
 }
 
