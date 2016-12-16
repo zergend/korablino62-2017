@@ -1,1 +1,25 @@
-.content-block {}
+.content-block {
+  border-top: 1px solid @dark-blue-grey;
+  border-bottom: 1px solid @dark-blue-grey;
+  position: relative;
+  min-height: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+
+  &--full {
+    width: 100%;
+  }
+
+  &--helf {
+    width: 48%;
+  }
+
+  &__label {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 10px;
+    top: -15px;
+    left: 20px;
+  }
+}
