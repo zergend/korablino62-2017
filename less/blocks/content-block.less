@@ -1,25 +1,36 @@
 .content-block {
-  border-top: 1px solid @dark-blue-grey;
-  border-bottom: 1px solid @dark-blue-grey;
   position: relative;
+/*  float: left; */
+
   min-height: 100px;
   margin-top: 15px;
   margin-bottom: 15px;
-  float: left;
+
+  border-top: 1px solid @dark-blue-grey;
+  border-bottom: 1px solid @dark-blue-grey;
 
   &--full {
     width: 100%;
   }
 
   &--helf {
-    width: 48%;
+    flex-basis: 49%;
+
+  }
+
+  &--alert {
+    color: @dark-red;
+    border-top: 1px solid @dark-red;
+    border-bottom: 1px solid @dark-red;
   }
 
   &__label {
     position: absolute;
-    background-color: #fff;
-    padding: 5px 10px;
     top: -15px;
     left: 20px;
+
+    padding: 5px 10px;
+
+    background-color: #fff;
   }
 }

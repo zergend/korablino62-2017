@@ -450,8 +450,8 @@ a {
   flex-direction: row;
   min-width: 768px;
   max-width: 1200px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   /* position: relative; */
   width: auto;
   justify-content: space-between;
@@ -465,10 +465,10 @@ a {
   }
 }
 .header-inner__logo {
-  /* float: left; */
-  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
+  /* float: left; */
+  flex-basis: 200px;
 }
 .header-inner__content {
   flex-grow: 1;
@@ -533,41 +533,45 @@ a {
 }
 /* main content */
 .main-content {
-  width: 320px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .main-content {
-    width: 640px;
+    width: 93.75%;
+    max-width: 1200px;
+    /* 1200 / .9375 =  1280 */
+    margin: 0 auto;
   }
-}
-@media (min-width: 1280px) {
-  .main-content {
-    width: 1200px;
-  }
-}
-.main-content::after {
-  display: table;
-  clear: both;
-  content: "";
 }
 .site-search {
   float: right;
   width: 40%;
   text-align: right;
 }
+.column {
+  flex-basis: 200px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
 .column--left {
-  float: left;
-  max-width: 200px;
+  /* float: left;
+    max-width: 200px; */
 }
 .column--middle {
-  float: left;
-  width: auto;
-  min-width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  /* float: left; */
+  /* width: auto; */
+  flex-grow: 1;
+  /* min-width: 300px; */
 }
 .column--right {
-  float: right;
-  min-width: 200px;
+  /* float: right; */
+  /* min-width: 200px; */
 }
 .menu-vertical__item.menu-item-has-children {
   /* добавить стрелочку справа */
@@ -601,25 +605,35 @@ a {
 .menu-vertical__list.submenu a:hover {
   background-color: rgba(50, 100, 128, 0.2);
 }
+.content-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .content-block {
-  border-top: 1px solid #326480;
-  border-bottom: 1px solid #326480;
   position: relative;
+  /*  float: left; */
   min-height: 100px;
   margin-top: 15px;
   margin-bottom: 15px;
-  float: left;
+  border-top: 1px solid #326480;
+  border-bottom: 1px solid #326480;
 }
 .content-block--full {
   width: 100%;
 }
 .content-block--helf {
-  width: 48%;
+  flex-basis: 49%;
+}
+.content-block--alert {
+  color: #cc0000;
+  border-top: 1px solid #cc0000;
+  border-bottom: 1px solid #cc0000;
 }
 .content-block__label {
   position: absolute;
-  background-color: #fff;
-  padding: 5px 10px;
   top: -15px;
   left: 20px;
+  padding: 5px 10px;
+  background-color: #fff;
 }
