@@ -1,21 +1,3 @@
-// ПРОЯВЛЯЮЩАЯСЯ ФОРМА
-var link = document.querySelector(".search-form-open");
-var popup = document.querySelector(".modal-content");
-
-link.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.toggle("modal-content-show");
-});
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (popup.classList.contains("modal-content-show")) {
-      popup.classList.remove("modal-content-show");
-    }
-  }
-});
-
-
 // ИНТЕРАКТИВНАЯ КАРТА
 
 var myMap;
@@ -35,8 +17,8 @@ function init() {
     searchControlProvider: 'yandex#search'
   });
   myPlacemark = new ymaps.Placemark([34.85413348, -111.79557050], {
-    hintContent: 'Седона!',
-    balloonContent: 'СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!'
+    hintContent: 'Кораблино, Рязанская область',
+    balloonContent: 'Кораблинский муниципальный район'
   });
   myMap.geoObjects.add(myPlacemark);
 }
