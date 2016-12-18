@@ -1,13 +1,36 @@
 .footer-inner {
-  display: flex;
-  flex-direction: row;
+  position: relative;
 
-  min-width: 768px;
-  max-width: 1200px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 100%;
+  min-height: 140px;
+  margin-top: -140px;
 
-  .container-fluid();
-  justify-content: space-between;
+  text-transform: none;
+
+  background-color: rgba(255, 255, 255, 0.8);
+
+  .flex-row-between();
+
+  &__address {
+    /* margin-left: 10px; */
+    text-align: left;
+  }
+
+  &__metrika {
+    /* margin-left: 10px; */
+    text-align: left;
+  }
+
+  &__nav {
+    .clear-list-style ();
+  }
+
+  &__rights {
+    text-align: right;
+  }
+
+  &__autor {
+    text-align: right;
+  }
 
 }

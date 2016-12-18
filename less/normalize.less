@@ -40,6 +40,13 @@ a {
   text-decoration: none;
 
   color: @dark-blue-grey;
+  &:hover {
+    border-bottom: 1px dotted @dark-blue-grey;
+
+    & img {
+      border-bottom: none;
+    }
+  }
 }
 
 .map {
