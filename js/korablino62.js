@@ -29,9 +29,11 @@
 
 // ИНТЕРАКТИВНАЯ КАРТА
 ymaps.ready(init);
+var myMap,
+    myPlacemark;
 
 function init() {
-    var myMap = new ymaps.Map("yamap", {
+    myMap = new ymaps.Map("yamap", {
         center: [53.878741, 40.041875],
         zoom: 10
     }, {
@@ -39,12 +41,13 @@ function init() {
     });
 
     myPlacemark = new ymaps.Placemark([53.937935, 40.055608], {
-      preset: 'islands#glyphIcon',
-      iconGlyph: 'home',
-      iconGlyphColor: 'blue',
-      hintContent: 'Кораблинский район, Рязанская область',
-      balloonContent: 'Кораблинский муниципальный район, Рязанская область'
+        preset: 'islands#glyphIcon',
+        iconGlyph: 'home',
+        iconGlyphColor: 'blue',
+        hintContent: 'Кораблинский район, Рязанская область',
+        balloonContent: 'Кораблинский муниципальный район, Рязанская область'
     });
 
     myMap.geoObjects.add(myPlacemark);
+    myMap.behaviors.disable('scrollZoom');
 }

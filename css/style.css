@@ -652,6 +652,35 @@ a {
   padding: 5px 10px;
   background-color: #fff;
 }
+/* widget (in column) */
+.widget-area {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.widget-area a {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 10px;
+}
+.widget-area a.w--red {
+  color: #fff;
+  background-color: #cc0000;
+}
+.widget-area a.w--red-line {
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  background-color: #fff;
+}
+.widget-area a.w--blue {
+  color: #fff;
+  background-color: #326480;
+}
+.widget-area a.w--blue-line {
+  color: #326480;
+  border: 1px solid #326480;
+  background-color: #fff;
+}
 /* footer */
 .main-footer {
   /* position: relative; */
