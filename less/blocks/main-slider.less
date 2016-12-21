@@ -5,7 +5,7 @@
   height: 88px;
   margin: 0 auto;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 
   text-align: center;
 
@@ -109,7 +109,19 @@
     background-size: cover;
   }
 
-  &__link {
+  &__link1 {
+    position: absolute;
+    z-index: 11;
+    bottom: 0;
+    left: 0;
+
+    width: inherit;
+    height: inherit;
+  
+    background-color: transparent;
+  }
+
+  &__link2 {
     position: absolute;
     z-index: 11;
     bottom: 0;
@@ -120,7 +132,8 @@
     padding-top: 15px;
 
     color: #fff;
-    background-color: rgba(32,32,32,.3);
+    /* background-color: rgba(32,32,32,.3); */
+    background-color: rgba(50, 100, 128, 0.5);
   }
 
   #slide1.active ~ &__content > &__item--1,

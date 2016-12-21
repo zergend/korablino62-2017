@@ -34,7 +34,16 @@
             </ul>
           </nav>
           <div class="site-search">
-            <input type="text" placeholder="введите ключевое слово" />
+            <form name="search" action="http://www.kipchakovo.org.ru/" method="get" class="search-form">
+            	<div class="large-11 columns">
+    	          <input type="text" value="test" name="s" placeholder="Поиск" class="input">
+              </div>
+              <div class="large-1 columns">
+                <button type="submit" class="button postfix">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
 
@@ -118,15 +127,24 @@
       	<input type="radio" name="point" id="slide5" class="main-slider__btn">
       	<div class="main-slider__content">
       		<div class="main-slider__item  main-slider__item--1" style="background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg); ">
-      		  <a href="#" class="main-slider__link">Самая главная новость номер один</a>
+            <a href="#" class="main-slider__link1"></a>
+      		  <a href="#" class="main-slider__link2">Самая главная новость номер один</a>
       		</div>
       		<div class="main-slider__item  main-slider__item--2" style="background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg); ">
-      		  <a href="#" class="main-slider__link">Главная новость 2</a>
+            <a href="#" class="main-slider__link1"></a>
+      		  <a href="#" class="main-slider__link2">Главная новость 2</a>
       		</div>
-      		<div class="main-slider__item  main-slider__item--3" style="background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); "></div>
-      		<div class="main-slider__item  main-slider__item--4" style="background-image: url(http://habrastorage.org/files/e59/424/c04/e59424c046be4dab897d84ab015c87ea.jpg); "></div>
+      		<div class="main-slider__item  main-slider__item--3" style="background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); ">
+            <a href="#" class="main-slider__link1"></a>
+            <a href="#" class="main-slider__link2">новость 03</a>
+      		</div>
+      		<div class="main-slider__item  main-slider__item--4" style="background-image: url(http://habrastorage.org/files/e59/424/c04/e59424c046be4dab897d84ab015c87ea.jpg); ">
+            <a href="#" class="main-slider__link1"></a>
+            <a href="#" class="main-slider__link2">новость 04</a>
+      		</div>
       		<div class="main-slider__item  main-slider__item--5" style="background-image: url(http://habrastorage.org/files/53c/ff6/c1c/53cff6c1caf842368c70b8ef892d8402.jpg); ">
-      		  <a href="#" class="main-slider__link">Самая главная новость номер пять</a>
+            <a href="#" class="main-slider__link1"></a>
+      		  <a href="#" class="main-slider__link2">Самая главная новость номер пять</a>
       		</div>
       	</div>
       	<div class="main-slider__controls">
@@ -138,6 +156,10 @@
       	</div>
       </div>
 
+      <div class="content-block  content-block--full  content-block--sticky content-block--alert">
+        <div class="content-block__label">Обратите внимание!</div>
+      </div>
+
       <div class="content-inner">
         <div class="content-block  content-block--helf  content-block--anounce">
           <div class="content-block__label">Объявления</div>
@@ -147,11 +169,6 @@
           <div class="content-block__label">Новости</div>
         </div>
       </div>
-
-      <div class="content-block  content-block--full  content-block--sticky content-block--alert">
-        <div class="content-block__label">Обратите внимание!</div>
-      </div>
-
 
       <div class="content-block  content-block--full  content-block__video-posts">
         <div class="content-block__label">Видео</div>
