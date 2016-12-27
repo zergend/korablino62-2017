@@ -641,7 +641,7 @@ a {
   background-color: #326480;
 }
 .menu-vertical__list {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-align: left;
   margin: 0;
   padding: 0;
